@@ -1,0 +1,42 @@
+---
+---
+<div class="Library"> 
+    <div class="YourLibrary"> 
+            <img src="/icons/library-icon.svg" alt="biblotek's ikon">
+            <h5> Your Library</h5>
+
+            <img class="Plus_knap" src="/icons/create-icon.svg" alt="plus ikon knap">
+    </div>
+    <slot />
+</div>
+
+<style>
+    .Library{
+        position:relative;
+        min-height:100%;
+    }
+
+    .YourLibrary{
+        display:flex;
+        flex-direction: row;
+        margin-left: 40px;
+        cursor: pointer;
+    }
+    .YourLibrary h5{
+        margin-left:10px;
+        margin-right: auto;
+        color:#9E9E9E; /*font #F0F0F bruges til hover*/ 
+    }
+   .Plus_knap{
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    margin-top:20px;
+    padding-right: 10px;
+   }
+   
+   .YourLibrary img{
+    margin-left:-40px;
+   }
+   
+</style>

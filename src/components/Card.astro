@@ -1,0 +1,81 @@
+---
+const {img, subheader, text} = Astro.props
+---
+<div class="wrap"> 
+	<div class="Card_bg"> 
+		<div>
+			<img class="albumCover" src={img}>
+			<img class="spotifyLogo" src="/icons/logo-alt.svg" alt="spotify logo">
+
+				<img class="playBtn" src="/icons/play-icon.svg" alt="play ikon knap">
+		
+		</div>
+		<p>{subheader} </p>
+		<p class="Card_description"> {text} </p>
+	</div>
+</div>
+
+<style>
+	.wrap:hover .playBtn{
+		opacity: 80%;
+		
+	}
+	.Card_bg{
+		background: #2E2E2E; /*color #3C3C3C skal bruges til hover */
+		max-width:174px;
+		position:relative;
+		z-index:1;
+		border-radius:10px;
+
+		padding:10px;
+		color:#F0F0F0;
+		cursor: pointer;
+	}
+	.Card_bg:hover{
+		background:#3C3C3C;
+		scale:1.01;
+	}
+	.spotifyLogo{
+		position:absolute;
+		z-index:2;
+		left:14px;
+		top:14px;
+		margin:4px;
+		width:20px;
+	}
+	.albumCover_text{
+		z-index:3;
+		position:absolute;
+		top:110px;
+		font-size:24px;
+	}
+	.playBtn{
+		position:absolute;
+		z-index:4;
+		border-radius:50px;
+		padding:8px;
+		top:110px;
+		right:20px;
+		opacity: 0;
+		background-color: #00CC00;
+		border:none;
+		width:50px;
+	}
+	.playBtn:hover{
+		opacity:80%;
+		
+	}
+	
+	.albumCover{
+		margin:auto;
+		display:block;
+	}
+	.Card_bg p{
+		padding-left:2px;
+	}
+	.Card_description{
+		color:#9E9E9E;
+	}
+</style>
+
+<!-- title = "search felt "når, (lav det som if), husk kig på billedet i fronter, lav new label i spotify seach opgave -->

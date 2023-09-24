@@ -1,0 +1,31 @@
+/*:root{
+
+}*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #252525;
+    height: 100vh;
+    position: relative;
+}
+
+.grid_1-5{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+
+}
+.margin{
+    margin-top: 40px;
+}
+.footer{
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    z-index: 8;
+    background: rgb(171,27,147);
+    background: linear-gradient(90deg, rgba(171,27,147,1) 1%, rgba(225,120,237,1) 51%, rgba(0,170,255,1) 100%); 
+    left:0;
+    right:0;
+}

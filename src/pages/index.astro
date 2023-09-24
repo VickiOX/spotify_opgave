@@ -1,0 +1,82 @@
+---
+import "../css/style.css";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+import YourLibrary from "../components/YourLibrary.astro";
+import Header from "../components/Header.astro";
+import Shelf from "../components/Shelf.astro";
+import Card from "../components/Card.astro";
+import CreatePlaylist from "../components/CreatePlaylist.astro";
+import Cookie from "../components/Cookie.astro";
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/icons/logo-alt.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title> 
+	</head>
+	<body>
+		<main class="grid_1-5">
+
+		<div> 
+			<Nav />
+			<YourLibrary >
+				<CreatePlaylist />
+				<CreatePlaylist />
+				<Cookie />
+			</YourLibrary>
+		</div>
+
+		<div>
+			<Header />
+			<Shelf text="Spotify Playlist">
+				<Card img ="https://picsum.photos/id/65/150/150" subheader="Todays top music" text="Jung Kook is on top of the Hottets 50!"/>
+				<Card img ="https://picsum.photos/id/68/150/150" subheader="RapCaviar" text="New music from frake wave an..."/>
+				<Card img ="https://picsum.photos/id/76/150/150" subheader="All Out 2010s" text="The biggest songs of the 2010s"/>
+				<Card img ="https://picsum.photos/id/240/150/150" subheader="Rock Classics" text="Rock legends & epic songs thant continue t..."/>
+				<Card img ="https://picsum.photos/id/331/150/150" subheader="Chill Hits" text="Kick back to the best new recent chill..."/>
+				<Card img ="https://picsum.photos/id/325/150/150" subheader="Viva Latino" text="Today's topLatin hits, elvando nuestra..."/>
+			</Shelf>
+
+			
+
+
+			<Shelf class="margin"  text="Focus">
+				<Card img ="https://picsum.photos/id/338/150/150" subheader="Todays top music" text="Jung Kook is on top of the Hottets 50!"/>
+				<Card img ="https://picsum.photos/id/349/150/150" subheader="RapCaviar" text="New music from frake wave an..."/>
+				<Card img ="https://picsum.photos/id/364/150/150" subheader="All Out 2010s" text="The biggest songs of the 2010s"/>
+				<Card img ="https://picsum.photos/id/334/150/150" subheader="Mega Hit Mix" text="A mega mix of 75 favorites from the las.."/>
+				<Card img ="https://picsum.photos/id/65/150/150" subheader="Chill Hits" text="Kick back to the best new recent chill..."/>
+				<Card  img ="https://picsum.photos/id/68/150/150"  subheader="Viva Latino" text="Today's topLatin hits, elvando nuestra..."/>
+			</Shelf>
+		</div>
+
+		</main>
+		<footer class="grid_1-1 footer_bg">
+			<Footer />
+		</footer>
+	</body>
+</html>
+
+
+<!--
+
+	Få playbutton til at reagere med card, så når der hover Card bliver play-btn vist 
+	
+	Få Spotify Playlist til at være på linje med Show all
+
+	Få ikon til Your Library og text Your Library samt + til at være på samme linje
+
+	Få cookies og english button til at rykke ned
+
+	Ret text color i footeren
+
+	Få text i cards til at være oven på billedet
+
+	Få footer til at have index-z og blive i bunden af siden, evt sticky footer
+
+ -->

@@ -1,0 +1,38 @@
+---
+const {text} = Astro.props
+---
+<div>
+    <div class="flex"> 
+        <h2> {text}</h2>
+        <p class="ShowAll">Show all </p>
+    </div>
+    <div class="Card_grid">
+        <slot />
+    </div>
+</div>
+
+    <style> 
+    .Card_grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fill, 180px);
+        gap:2rem;
+    }
+    .ShowAll{
+        margin-top: 30px;
+        margin-right: 40px;
+        color:#F0F0F0;
+        position: absolute;
+        right:0;
+        cursor: pointer;
+    }
+    .ShowAll:hover{
+        text-decoration:underline;
+    }
+    h2{
+        color:#F0F0F0;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row;
+    }
+    </style>
