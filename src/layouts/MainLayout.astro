@@ -1,0 +1,45 @@
+---
+import "../css/style.css";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+import YourLibrary from "../components/YourLibrary.astro";
+import Header from "../components/Header.astro";
+import CreatePlaylist from "../components/CreatePlaylist.astro";
+import Cookie from "../components/Cookie.astro";
+
+---
+
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/icons/logo-alt.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title> 
+	</head>
+	<body>
+		<main class="grid_1-5">
+			
+			<div> 
+				<Nav />
+				<YourLibrary >
+					<CreatePlaylist />
+					<CreatePlaylist />
+					<Cookie />
+				</YourLibrary>
+			</div>
+	
+
+		<div>
+		<Header />
+		<slot />
+		</div>
+
+		</main>
+		<footer class="grid_1-1 footer_bg">
+			<Footer />
+		</footer>
+	</body>
+</html>
+

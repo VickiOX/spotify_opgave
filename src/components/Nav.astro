@@ -5,12 +5,12 @@
 
 <div class="home"> 
     <img src="/icons/home-filled.svg" alt="home logo"> <!--Ikon home knap -->
-    <p>Home</p>
+    <a href="/">Home</a>
 </div>
 
 <div class="search"> 
     <img src="/icons/search-icon.svg" alt="search logo"> <!--Ikon search knap -->
-    <p>Search</p>
+    <a href="/search">Search</a>
 </div>
 
 <style>
@@ -23,19 +23,22 @@
 .home{
     display:flex;
     cursor: pointer;
+    margin-bottom: 4px;
    
 }
-.home p{
+.home a{
     margin-left:10px;
     color:#F0F0F0;
+    text-decoration: none;
 }
 .search{
     display:flex;
     cursor: pointer;
 
 }
-.search p{
+.search a{
     margin-left:10px;
     color:#9E9E9E; /*font #F0F0F bruges til hover*/ 
+    text-decoration: none;
 }
 </style>

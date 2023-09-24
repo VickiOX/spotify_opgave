@@ -1,0 +1,54 @@
+---
+import KategoriCard from "../components/Kategori_Card.astro";
+import "../css/style.css";
+import MainLayout from "../layouts/MainLayout.astro";
+
+
+---
+
+
+<MainLayout> 
+<h2>Browse all</h2>
+<div class="Card_grid"> 
+    <KategoriCard title="Podcasts" img="https://picsum.photos/id/325/150/150" color="#508f59"/>
+    <KategoriCard title="Made For You" img="https://picsum.photos/id/65/150/150" NewLabel={true} color="#49658a"/>
+    <KategoriCard title="Charts" img="https://picsum.photos/id/331/150/150"  color="#65498a"/>
+    <KategoriCard title="New Releases" img="https://picsum.photos/id/68/150/150" color="#7a405c" />
+    <KategoriCard title="Live Events" img="https://picsum.photos/id/240/150/150" NewLabel={true}  color="#508f59"/>
+    <KategoriCard title="Podcasts" img="https://picsum.photos/id/76/150/150" color="#49658a"/>
+    <KategoriCard title="Podcasts" img="https://picsum.photos/id/325/150/150" color="#65498a"/>
+    <KategoriCard title="Made For You" img="https://picsum.photos/id/65/150/150" NewLabel={true} color="#7a405c"/>
+    <KategoriCard title="Charts" img="https://picsum.photos/id/331/150/150"  color="#508f59"/>
+    <KategoriCard title="New Releases" img="https://picsum.photos/id/68/150/150" color="#49658a" />
+    <KategoriCard title="Live Events" img="https://picsum.photos/id/240/150/150" NewLabel={true}  color="#65498a"/>
+    <KategoriCard title="Podcasts" img="https://picsum.photos/id/76/150/150" color="#7a405c"/>
+    <KategoriCard title="Podcasts" img="https://picsum.photos/id/325/150/150" color="#508f59"/>
+    <KategoriCard title="Made For You" img="https://picsum.photos/id/65/150/150" NewLabel={true} color="#49658a"/>
+    <KategoriCard title="Charts" img="https://picsum.photos/id/331/150/150"  color="#65498a"/>
+    <KategoriCard title="New Releases" img="https://picsum.photos/id/68/150/150" color="#7a405c" />
+    <KategoriCard title="Live Events" img="https://picsum.photos/id/240/150/150" NewLabel={true}  color="#508f59"/>
+    <KategoriCard title="Podcasts" img="https://picsum.photos/id/76/150/150" color="#49658a"/>
+    <KategoriCard title="Podcasts" img="https://picsum.photos/id/325/150/150" color="#65498a"/>
+    <KategoriCard title="Made For You" img="https://picsum.photos/id/65/150/150" NewLabel={true} color="#7a405c"/>
+    <KategoriCard title="Charts" img="https://picsum.photos/id/331/150/150"  color="#508f59"/>
+    <KategoriCard title="New Releases" img="https://picsum.photos/id/68/150/150" color="#49658a" />
+    <KategoriCard title="Live Events" img="https://picsum.photos/id/240/150/150" NewLabel={true}  color="#65498a"/>
+    <KategoriCard title="Podcasts" img="https://picsum.photos/id/76/150/150" color="#7a405c"/>
+</div>
+
+</MainLayout>
+	
+<style>
+    h2 {
+        color:#F0F0F0
+    }
+    .Card_grid{
+        display:grid;
+        grid-template-columns: repeat(auto-fill, 180px);
+        gap:2rem;
+    }
+</style>
+
+<!-- 
+    indsæt søgefelt i headeren ved label
+-->

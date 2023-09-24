@@ -1,4 +1,5 @@
 ---
+import SearchBox from "../components/SearchBox.astro";
 ---
 <div class="Header">
     <div>
@@ -10,8 +11,10 @@
         <button class="pil">
             <img src="/icons/forward-btn.svg" alt="ikon pil højre knap">
         </button>
+        <SearchBox />
     </div>
 
+ 
     <div>
         <button class="SignUp">Sign up </button>
         <button class="LoginIn">Login in </button>
@@ -31,7 +34,7 @@
         border-radius: 50%;
         padding:4px 6px;
         background-color: #F0F0F0;
-        margin-top: 4px;
+        margin-bottom: 4px;
         cursor: pointer;
     }
    .LoginIn{
